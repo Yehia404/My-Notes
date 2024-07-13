@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "768749657024",
+    "project_id": "yehia-first-project-50667",
+    "storage_bucket": "yehia-first-project-50667.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:768749657024:android:2cdf77bab0d4ab1c58c625",
+        "android_client_info": {
+          "package_name": "com.app.test"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC809j0I2eN22mtm4MRIXIUqfIc6bp_ABE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
