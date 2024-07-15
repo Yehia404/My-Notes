@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'dart:developer' as devtools show log;
 
 import 'package:test/constants/routes.dart';
+import 'package:test/utilities/show_error_dialog.dart';
 
 class LoginView extends StatefulWidget {
   const LoginView({super.key});
@@ -72,7 +73,27 @@ class _LoginViewState extends State<LoginView> {
               } on FirebaseAuthException catch (e) {
                 if (e.code == 'invalid-credential') {
                   devtools.log('User Not Found (Invalid Email or Password).');
+                  await showErrorDialog(
+                    context,
+                    'User Not Found (Invalid Email or Password).',
+                  );
+                } else if (e.code == 'invalid-email') {
+                  devtools.log('The email address is badly formatted.');
+                  await showErrorDialog(
+                    context,
+                    'The email address is badly formatted.',
+                  );
+                } else {
+                  await showErrorDialog(
+                    context,
+                    'Error: ${e.code}',
+                  );
                 }
+              } catch (e) {
+                await showErrorDialog(
+                  context,
+                  e.toString(),
+                );
               }
             },
             child: const Text('Login'),
