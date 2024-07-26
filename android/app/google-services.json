@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "534662511917",
+    "project_id": "mynotes-project-ef6d4",
+    "storage_bucket": "mynotes-project-ef6d4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:534662511917:android:2216a547e5b10e1c6ee7a4",
+        "android_client_info": {
+          "package_name": "com.yehia.mynotes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOKD2oIl2oKBedncDQkcgeHUyoLUdPo1Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
